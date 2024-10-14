@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Taux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculateur de Taux</h1>
+        <div class="input-group">
+            <label for="inputMontant">Montant</label>
+            <!-- class A ajoutée a l'input-->
+            <input class="A" type="number" id="inputMontant" value="1000" min="1000" max="1000000" step="1000">
+        </div>
+        <div class="input-group">
+            <label for="inputAnnee">Année</label>
+
+            <input class="A" type="number" id="inputAnnee" value="1" min="1" max="25" step="1">
+        </div>
+        <div class="input-group">
+            <label for="inputTaux">Taux</label>
+            <!-- valeur par défaut a 0.1!-->
+            <input class="A" type="number" id="inputTaux" value="0.1" min="0.1" max="10" step="0.1">
+        </div>
+        <!-- transformé en div pour le inputMensualite container -->
+        <div id="inputMensualite"></div>
+    </div>
+    <script src="code.js"></script>
+</body>
+
+</html>
